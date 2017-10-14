@@ -10,5 +10,5 @@
 
   {{#link-to 'link' link.id}}Single{{/link-to}}
 
-  {{if link.postedBy.name link.postedBy.name 'Unknown'}}
+  {{if link.postedBy.name link.postedBy.name 'Unknown'}} {{moment-from-now link.createdAt}}
 </div>

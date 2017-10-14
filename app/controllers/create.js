@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import mutation from 'shareable-ember/gql/mutations/createLink';
+import allLinks from 'shareable-ember/gql/queries/allLinks';
 
 export default Ember.Controller.extend({
   actions: {
