@@ -1,0 +1,14 @@
+{{#link-to 'links'}}Shareables{{/link-to}}
+{{#if userLoggedIn}}
+
+    {{#link-to 'create'}}Add shareable{{/link-to}}
+
+{{/if}}
+
+{{#if userLoggedIn}}
+  <div class="link" {{action 'logout'}}>
+    logout
+  </div>
+{{else}}
+  {{#link-to 'login'}}login{{/link-to}}
+{{/if}}

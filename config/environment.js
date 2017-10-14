@@ -7,6 +7,9 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    apollo: {
+      apiURL: 'https://api.graph.cool/simple/v1/cj8fjk29x06ud0139olvpcvq0'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

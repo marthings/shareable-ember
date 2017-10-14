@@ -1,0 +1,14 @@
+<div>
+  {{add index 1}}
+  {{#if userLoggedIn}}
+    <div class='ml1 gray f11 pointer' {{action 'voteForLink' link.votes link.id}}>
+      ▲
+    </div>
+  {{/if}}
+  <div>{{link.description}} ({{link.url}})</div>
+  {{link.votes.length}}
+
+  {{#link-to 'link' link.id}}Single{{/link-to}}
+
+  {{if link.postedBy.name link.postedBy.name 'Unknown'}}
+</div>
