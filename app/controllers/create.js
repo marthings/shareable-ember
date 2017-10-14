@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import mutation from 'hackernews-ember-apollo/gql/mutations/createLink';
+import mutation from 'shareable-ember/gql/mutations/createLink';
 
 export default Ember.Controller.extend({
   actions: {

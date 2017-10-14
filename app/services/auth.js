@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import RSVP from 'rsvp';
-import signInUserMutation from 'hackernews-ember-apollo/gql/mutations/signInUser';
-import createUser from 'hackernews-ember-apollo/gql/mutations/createUser';
+import signInUserMutation from 'shareable-ember/gql/mutations/signInUser';
+import createUser from 'shareable-ember/gql/mutations/createUser';
 
 // 1.
 const GC_USER_ID = 'graphcool-user-id';

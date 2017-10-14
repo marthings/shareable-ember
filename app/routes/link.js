@@ -1,6 +1,6 @@
 import Ember from "ember";
 import RouteQueryManager from "ember-apollo-client/mixins/route-query-manager";
-import query from "hackernews-ember-apollo/gql/queries/link";
+import query from "shareable-ember/gql/queries/link";
 
 export default Ember.Route.extend(RouteQueryManager, {
   model(params) {

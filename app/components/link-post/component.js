@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import createVote from 'hackernews-ember-apollo/gql/mutations/createVote';
-import allLinks from 'hackernews-ember-apollo/gql/queries/allLinks';
+import createVote from 'shareable-ember/gql/mutations/createVote';
+import allLinks from 'shareable-ember/gql/queries/allLinks';
 
 export default Ember.Component.extend({
   actions: {

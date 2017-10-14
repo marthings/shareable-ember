@@ -3,7 +3,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'hackernews-ember-apollo',
+    modulePrefix: 'shareable-ember',
     environment,
     rootURL: '/',
     locationType: 'auto',

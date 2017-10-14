@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import UnsubscribeRoute from 'ember-apollo-client/mixins/unsubscribe-route';
-import query from 'hackernews-ember-apollo/gql/queries/allLinks';
+import query from 'shareable-ember/gql/queries/allLinks';
 
 export default Ember.Route.extend(UnsubscribeRoute, {
 
