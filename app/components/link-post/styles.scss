@@ -1,0 +1,52 @@
+& {
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: background 300ms ease-in;
+  &:hover {
+    background: #2E3238;
+  }
+  .link-item {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  .link-meta {
+    color: #656565;
+  }
+
+  .link-poop {
+    display: flex;
+    align-items: center;
+  }
+
+  .link-vote {
+    background-image: url(../poop-vote.svg);
+    width: 32px;
+    height: 28px;
+    margin-right: 20px;
+    cursor: pointer;
+    &:hover {
+      animation: wiggle 1000ms 1 ease-in-out;
+      animation-name: wiggle;
+      animation-duration: 1000ms;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+    }
+  }
+
+  .link-content {
+    margin-left: 30px;
+  }
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}

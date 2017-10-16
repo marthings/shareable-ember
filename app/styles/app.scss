@@ -1,0 +1,51 @@
+@import "pod-styles";
+@import "normalize";
+
+body {
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  background: #272C32;
+  color: #fff;
+  padding: 50px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-title {
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  line-height: 1.2;
+  margin: 0 0 5px 0;
+}
+
+.site-author {
+  margin-bottom: 60px;
+  display: inline-block;
+  color: #C29272;
+}
+
+.form-control {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #606060;
+  padding: 15px 0;
+  color: #fff;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  &:focus {
+    outline: 0;
+    border-bottom: 1px solid #7FC8F2;
+  }
+}
+
+.button {
+  background: #90B476;
+  border: 0;
+  padding: 12px 20px;
+  color: #fff;
+}

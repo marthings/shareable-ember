@@ -1,14 +1,13 @@
-<div>
-  {{add index 1}}
-  {{#if userLoggedIn}}
-    <div class='ml1 gray f11 pointer' {{action 'voteForLink' link.votes link.id}}>
-      ▲
-    </div>
-  {{/if}}
-  <div>{{link.description}} ({{link.url}})</div>
+<div class="link-poop">
+  <div class="link-vote" {{action 'voteForLink' link.votes link.id}}></div>
   {{link.votes.length}}
+</div>
 
-  {{#link-to 'link' link.id}}Single{{/link-to}}
+<div class="link-content">
+  <a class="link-item" target="_blank" href="{{link.url}}">{{link.description}}</a>
 
-  {{if link.postedBy.name link.postedBy.name 'Unknown'}} {{moment-from-now link.createdAt}}
+  <div class="link-meta">
+    {{if link.postedBy.name link.postedBy.name 'Unknown'}} {{moment-from-now link.createdAt}}
+  </div>
+
 </div>

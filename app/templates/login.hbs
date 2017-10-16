@@ -7,15 +7,15 @@
 <form {{action 'loginOrSignUp' on='submit'}}>
 
   {{#unless loginState}}
-    {{input type='text' placeholder='Your name' value=name}}
+    {{input class="form-control" type='text' placeholder='Your name' value=name}}
   {{/unless}}
 
-  {{input type='text' placeholder='Your email address' value=email}}
-  {{input type='password' placeholder='Choose a safe password' value=password}}
+  {{input class="form-control" type='text' placeholder='Your email address' value=email}}
+  {{input class="form-control" type='password' placeholder='Choose a safe password' value=password}}
 
-  {{input type='submit' class='mr2' value=(if loginState 'login' 'create account')}}
+  {{input class="button" type='submit' class='mr2' value=(if loginState 'login' 'create account')}}
 
-  <button {{action 'changeLoginState'}}>
+  <button class="button" {{action 'changeLoginState'}}>
     {{#if loginState}}
       need to create an account?
     {{else}}

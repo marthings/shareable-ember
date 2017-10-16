@@ -1,0 +1,45 @@
+& {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  background-image: url(../poop-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding: 10px 10px 10px 35px;
+  margin-right: 50px;
+}
+
+.nav-link {
+  color: #606060;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 20px;
+  &.active {
+    color: #fff;
+  }
+}
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+}
+
+.nav-poop-add {
+  background-image: url(../poop-add.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 18px;
+  display: block;
+  cursor: pointer;
+}

@@ -1,14 +1,23 @@
-{{#link-to 'links'}}Shareable{{/link-to}}
-{{#if userLoggedIn}}
-
-    {{#link-to 'create'}}Add shareable{{/link-to}}
-
-{{/if}}
-
-{{#if userLoggedIn}}
-  <div class="link" {{action 'logout'}}>
-    logout
+<div class="nav">
+  <div class="nav-logo nav-link">
+    Stinkylinks
   </div>
-{{else}}
-  {{#link-to 'login'}}login{{/link-to}}
-{{/if}}
+
+  <nav class="nav-links">
+    {{#link-to 'links' class="nav-link"}}_Stinkiest{{/link-to}}
+    <a href="#" class="nav-link">_Not so stinky</a>
+    <a href="#" class="nav-link">_Didn´t even wipe</a>
+  </nav>
+</div>
+<div class="nav-profile">
+  {{#if userLoggedIn}}
+    <a href="#" class="nav-link">{{model.name}}</a>
+    {{#link-to 'create' class="nav-poop-add"}}{{/link-to}}
+  {{/if}}
+
+  {{#if userLoggedIn}}
+    {{!-- <div class="link" {{action 'logout'}}>logout</div> --}}
+  {{else}}
+    {{#link-to 'login'}}login{{/link-to}}
+  {{/if}}
+</div>
