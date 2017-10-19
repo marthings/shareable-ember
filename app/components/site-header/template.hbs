@@ -13,8 +13,8 @@
   {{#if userLoggedIn}}
     <a href="#" class="nav-link">{{model.name}}</a>
     {{#link-to 'create' class="nav-poop-add"}}{{/link-to}}
-    <div class="link" {{action 'logout'}}>logout</div>
+    <div class="nav-link" {{action 'logout'}}>logout</div>
   {{else}}
-    {{#link-to 'login'}}login{{/link-to}}
+    {{#link-to 'login' class="nav-link"}}login{{/link-to}}
   {{/if}}
 </div>

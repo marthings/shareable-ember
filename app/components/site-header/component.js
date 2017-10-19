@@ -8,8 +8,8 @@ export default Ember.Component.extend({
       });
     }
   },
-
   auth: Ember.inject.service(),
+  apollo: Ember.inject.service(),
 
   userLoggedIn: Ember.computed.oneWay('auth.isLoggedIn')
 });

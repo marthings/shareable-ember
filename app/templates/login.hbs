@@ -1,9 +1,3 @@
-{{#if loginState}}
-  Login
-{{else}}
-  Sign Up
-{{/if}}
-
 <form {{action 'loginOrSignUp' on='submit'}}>
 
   {{#unless loginState}}
